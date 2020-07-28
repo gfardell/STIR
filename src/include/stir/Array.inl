@@ -364,7 +364,7 @@ xapyb(const Array& x, const elemT2 a,
 template <int num_dimensions, typename elemT>
 void
 Array<num_dimensions,elemT>::
-xapyb_vec(const Array& x, const Array& a,
+xapyb(const Array& x, const Array& a,
           const Array& y, const Array& b)
 {  
   this->check_state();
@@ -382,7 +382,7 @@ xapyb_vec(const Array& x, const Array& a,
 
   while (this_iter != this->end())
     {
-      this_iter->xapyb_vec(*x_iter++, *a_iter++, *y_iter++, *b_iter++);
+      this_iter->xapyb(*x_iter++, *a_iter++, *y_iter++, *b_iter++);
       ++this_iter;
     }
 }

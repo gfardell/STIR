@@ -138,7 +138,7 @@ public:
                       const NumericVectorWithOffset& y, const elemT2 b);
 
   //! x*a+y*b, where a, b, x and y are vectors
-    inline void xapyb_vec(const NumericVectorWithOffset& x, const NumericVectorWithOffset& a,
+    inline void xapyb(const NumericVectorWithOffset& x, const NumericVectorWithOffset& a,
                       const NumericVectorWithOffset& y, const NumericVectorWithOffset& b);                      
 };
 

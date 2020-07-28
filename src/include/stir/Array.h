@@ -252,7 +252,7 @@ public:
                       const Array& y, const elemT2 b);
 
    //! x*a+y*b, where a, b, x and y are arrays
-    inline void xapyb_vec(const Array& x, const Array& a,
+    inline void xapyb(const Array& x, const Array& a,
                           const Array& y, const Array& b);                     
                    
 };
